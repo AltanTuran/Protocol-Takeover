@@ -61,7 +61,7 @@ public class movement : MonoBehaviour
             enerji -= 1;
             GameObject bullet = Instantiate(laserbeam, attackpoint.position, attackpoint.rotation);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-            rb.AddForce(attackpoint.up * 40, ForceMode2D.Impulse);
+            rb.AddForce(attackpoint.up * 26, ForceMode2D.Impulse);
         }
         else { animator.SetBool("attack", false); }
     }
