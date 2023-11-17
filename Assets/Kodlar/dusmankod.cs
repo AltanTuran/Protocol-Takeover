@@ -67,7 +67,7 @@ public class dusmankod : MonoBehaviour
         StartCoroutine("sýkma");
         GameObject bullet = Instantiate(laserbeam, attackpoint.position, attackpoint.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(attackpoint.up * 40, ForceMode2D.Impulse);
+        rb.AddForce(attackpoint.up * 10, ForceMode2D.Impulse);
     }
     void Algýlama()
     {
