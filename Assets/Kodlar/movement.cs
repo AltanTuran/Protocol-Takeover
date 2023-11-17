@@ -21,6 +21,7 @@ public class movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(rigid.velocity);
         enerjibar.value = enerji;
         if(enerji <= 100)
         {
