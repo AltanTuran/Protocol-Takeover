@@ -6,6 +6,7 @@ public class dusmankod : MonoBehaviour
 {
     public float dedectrange = 5f;
     public GameObject player;
+    public GameObject enerji;
     public GameObject laserbeam;
     public Transform attackpoint;
     public LayerMask karakterlayer;
@@ -116,5 +117,14 @@ public class dusmankod : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         sýkabilir = true;
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("laser"))
+        {
+            Instantiate(enerji, transform.position, Quaternion.identity);
+            Destroy(this.gameObject);
+            
+        }
     }
 }
