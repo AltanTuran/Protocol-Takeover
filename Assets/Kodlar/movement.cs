@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class movement : MonoBehaviour
 {
@@ -9,8 +10,8 @@ public class movement : MonoBehaviour
     Rigidbody2D rigid;
     Animator animator;
     public float speed = 5;
-    public float enerji = 3;
-    
+    public int enerji = 3;
+    public Image pil;
     
     void Start()
     {
@@ -21,25 +22,35 @@ public class movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(enerji > 3)
+        if (!animator.GetBool("die"))
         {
-            enerji = 3;
+            pil.GetComponent<Animator>().SetInteger("sarj", enerji);
+            if (enerji > 3)
+            {
+                enerji = 3;
+            }
+            Debug.Log(rigid.velocity);
+            Hareket();
+            Attack();
+            RotateTowardsMouse();
+            if (rigid.velocity != Vector2.zero)
+            {
+                animator.SetBool("movement", true);
+            }
+            else { animator.SetBool("movement", false); }
+
         }
-        Debug.Log(rigid.velocity);        
-        Hareket();
-        Attack();
-        RotateTowardsMouse();
-        if(rigid.velocity != Vector2.zero)
-        {
-            animator.SetBool("movement", true);
-        }
-        else { animator.SetBool("movement", false); }
-        
+
+
     }
 
     void Hareket()
     {
         rigid.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * speed, Input.GetAxisRaw("Vertical") * speed);
+        if(Input.GetAxisRaw("Horizontal") == 0 && Input.GetAxisRaw("Vertical") == 0)
+        {
+            rigid.velocity = Vector2.zero;
+        }
     }
 
     void Attack()
@@ -62,5 +73,27 @@ public class movement : MonoBehaviour
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+    }
+    public void Tekrar()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.name);
+
+
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("laser"))
+        {
+            rigid.velocity = Vector3.zero;
+            rigid.freezeRotation = true;
+            animator.SetBool("die", true);
+            
+        }
+        if (collision.collider.CompareTag("enerji"))
+        {
+            enerji += 1;
+            Destroy(collision.gameObject);
+        }
     }
 }
