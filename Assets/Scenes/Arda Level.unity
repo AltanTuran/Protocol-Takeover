@@ -141,7 +141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.27622414
+      value: -2.02
       objectReference: {fileID: 0}
     - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -178,6 +178,128 @@ PrefabInstance:
     - target: {fileID: 4989213177451907379, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
       propertyPath: m_Name
       value: DusmanRobot1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+--- !u!1001 &233368547
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 828028771}
+    m_Modifications:
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 29.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4989213177451907379, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_Name
+      value: DusmanRobot1 (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+--- !u!1001 &233493986
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 828028771}
+    m_Modifications:
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 37.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.78226
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4989213177451907379, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_Name
+      value: DusmanRobot1 (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -249,17 +371,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ede4953b6ea965c458689123cdc04a9b, type: 3}
---- !u!4 &444241706 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3397117969177774638, guid: ede4953b6ea965c458689123cdc04a9b, type: 3}
-  m_PrefabInstance: {fileID: 280783421}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &569057879 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
-  m_PrefabInstance: {fileID: 2045341517}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &603170970
+--- !u!1001 &302130310
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -273,11 +385,92 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.1
+      value: 21.22
       objectReference: {fileID: 0}
     - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.39
+      value: 4.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4989213177451907379, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_Name
+      value: DusmanRobot1 (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+--- !u!4 &403149998 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+  m_PrefabInstance: {fileID: 1553955868}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &412475679 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+  m_PrefabInstance: {fileID: 790356871}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &444241706 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3397117969177774638, guid: ede4953b6ea965c458689123cdc04a9b, type: 3}
+  m_PrefabInstance: {fileID: 280783421}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &569057879 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+  m_PrefabInstance: {fileID: 2045341517}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &790356871
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 828028771}
+    m_Modifications:
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.23
       objectReference: {fileID: 0}
     - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -350,7 +543,11 @@ Transform:
   m_Children:
   - {fileID: 569057879}
   - {fileID: 1649893948}
-  - {fileID: 1719072211}
+  - {fileID: 928264713}
+  - {fileID: 403149998}
+  - {fileID: 955565129}
+  - {fileID: 1144169221}
+  - {fileID: 412475679}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -597,6 +794,16 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!4 &928264713 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+  m_PrefabInstance: {fileID: 233493986}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &955565129 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+  m_PrefabInstance: {fileID: 233368547}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1037921951
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,6 +889,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a67341cc541ff14ba12d1d2100d345f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1144169221 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+  m_PrefabInstance: {fileID: 302130310}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1199178266
 GameObject:
   m_ObjectHideFlags: 0
@@ -3946,6 +4158,67 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!1001 &1553955868
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 828028771}
+    m_Modifications:
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 30.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4989213177451907379, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: m_Name
+      value: DusmanRobot1 (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
 --- !u!4 &1649893948 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
@@ -13728,11 +14001,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &1719072211 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3842431716202336396, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
-  m_PrefabInstance: {fileID: 603170970}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1803737334
 GameObject:
   m_ObjectHideFlags: 0
