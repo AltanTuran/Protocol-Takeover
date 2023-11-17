@@ -9,8 +9,8 @@ public class movement : MonoBehaviour
     Rigidbody2D rigid;
     Animator animator;
     public float speed = 5;
-    float enerji = 100;
-    public Slider enerjibar;
+    float enerji = 3;
+    
     
     void Start()
     {
@@ -21,12 +21,11 @@ public class movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(rigid.velocity);
-        enerjibar.value = enerji;
-        if(enerji <= 100)
+        if(enerji > 3)
         {
-            enerji += 35 * Time.deltaTime;
+            enerji = 3;
         }
+        Debug.Log(rigid.velocity);        
         Hareket();
         Attack();
         RotateTowardsMouse();
@@ -45,10 +44,10 @@ public class movement : MonoBehaviour
 
     void Attack()
     {
-        if (Input.GetMouseButtonDown(0) && enerji >= 35)
+        if (Input.GetMouseButtonDown(0) && enerji >= 1)
         {
             animator.SetBool("attack", true);
-            enerji -= 35;
+            enerji -= 1;
             GameObject bullet = Instantiate(laserbeam, attackpoint.position, attackpoint.rotation);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             rb.AddForce(attackpoint.up * 40, ForceMode2D.Impulse);

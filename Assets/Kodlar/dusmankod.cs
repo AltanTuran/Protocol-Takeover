@@ -14,6 +14,7 @@ public class dusmankod : MonoBehaviour
     Rigidbody2D rigidbody2;
     NavMeshAgent agent;
     public float atesrange;
+    bool sýkabilir = true;
     void Start()
     {
         rigidbody2 = GetComponent<Rigidbody2D>();   
@@ -33,7 +34,7 @@ public class dusmankod : MonoBehaviour
             Hareket();
             agent.Resume();
         }
-        else if (atesdedected)
+        else if (atesdedected && sýkabilir)
         {
             AtesEt();
             agent.Stop();
@@ -59,6 +60,8 @@ public class dusmankod : MonoBehaviour
     }
     void AtesEt()
     {
+        sýkabilir = false;
+        StartCoroutine("sýkma");
         GameObject bullet = Instantiate(laserbeam, attackpoint.position, attackpoint.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(attackpoint.up * 40, ForceMode2D.Impulse);
@@ -107,5 +110,11 @@ public class dusmankod : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, dedectrange);
         Gizmos.DrawWireSphere(transform.position, atesrange);
+    }
+
+    IEnumerator sýkma()
+    {
+        yield return new WaitForSeconds(2);
+        sýkabilir = true;
     }
 }
