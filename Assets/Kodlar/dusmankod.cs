@@ -5,7 +5,7 @@ using UnityEngine.AI;
 public class dusmankod : MonoBehaviour
 {
     public float dedectrange = 5f;
-    public GameObject player;
+     GameObject player;
     public GameObject enerji;
     public GameObject laserbeam;
     public Transform attackpoint;
@@ -18,7 +18,8 @@ public class dusmankod : MonoBehaviour
     bool sýkabilir = true;
     void Start()
     {
-        rigidbody2 = GetComponent<Rigidbody2D>();   
+        rigidbody2 = GetComponent<Rigidbody2D>();
+        player = GameObject.Find("karakter");
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false; 
@@ -27,21 +28,22 @@ public class dusmankod : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(agent);
         Dön();
         Algýlama();
         AtesAlgýlama();
         if (enemydedected && atesdedected == false)
         {
             Hareket();
-            agent.Resume();
+            agent.isStopped = false;
         }
         else if (atesdedected && sýkabilir)
         {
             AtesEt();
-            agent.Stop();
+            agent.isStopped=true;
 
         }
-        else { agent.Stop(); }
+        else { agent.isStopped = true; }
     }
 
     void Hareket()

@@ -85,8 +85,10 @@ public class movement : MonoBehaviour
     {
         if (collision.collider.CompareTag("laser"))
         {
-            animator.SetBool("die", true);
             rigid.velocity = Vector3.zero;
+            rigid.freezeRotation = true;
+            animator.SetBool("die", true);
+            
         }
         if (collision.collider.CompareTag("enerji"))
         {
