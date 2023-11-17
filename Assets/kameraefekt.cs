@@ -9,7 +9,7 @@ public class kameraefekt : MonoBehaviour
     float zval = 0f;
     void Start()
     {
-        mov = GameObject.Find("karakter").GetComponent<movement>(); 
+        mov = GameObject.Find("karakter").GetComponent<movement>();
     }
 
     // Update is called once per frame
@@ -22,7 +22,7 @@ public class kameraefekt : MonoBehaviour
 
             zval += mod;
 
-            if(transform.eulerAngles.z >= 5.0f && transform.eulerAngles.z <= 10.0f)
+            if (transform.eulerAngles.z >= 5.0f && transform.eulerAngles.z <= 10.0f)
             {
                 mod = -0.01f;
             }
