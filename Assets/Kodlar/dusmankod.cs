@@ -5,6 +5,8 @@ using UnityEngine.AI;
 public class dusmankod : MonoBehaviour
 {
     public float dedectrange = 5f;
+    Animator animator;
+    public GameObject robokan;
      GameObject player;
     public GameObject enerji;
     public GameObject laserbeam;
@@ -23,27 +25,33 @@ public class dusmankod : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false; 
+        animator = GetComponent<Animator>();    
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(agent);
-        Dön();
-        Algýlama();
-        AtesAlgýlama();
-        if (enemydedected && atesdedected == false)
+        if (!animator.GetBool("die"))
         {
-            Hareket();
-            agent.isStopped = false;
-        }
-        else if (atesdedected && sýkabilir)
-        {
-            AtesEt();
-            agent.isStopped=true;
 
+            Debug.Log(agent);
+            Dön();
+            Algýlama();
+            AtesAlgýlama();
+            if (enemydedected && atesdedected == false)
+            {
+                Hareket();
+                agent.isStopped = false;
+            }
+            else if (atesdedected && sýkabilir)
+            {
+                AtesEt();
+                agent.isStopped = true;
+
+            }
+            else { agent.isStopped = true; }
         }
-        else { agent.isStopped = true; }
+        
     }
 
     void Hareket()
@@ -63,6 +71,7 @@ public class dusmankod : MonoBehaviour
     }
     void AtesEt()
     {
+        animator.SetBool("attack", true);
         sýkabilir = false;
         StartCoroutine("sýkma");
         GameObject bullet = Instantiate(laserbeam, attackpoint.position, attackpoint.rotation);
@@ -107,6 +116,10 @@ public class dusmankod : MonoBehaviour
             atesdedected = false;
         }
     }
+    public void AttackKapa()
+    {
+        animator.SetBool("attack", false);
+    }
     void OnDrawGizmosSelected()
     {
         // Editor içinde algýlama mesafesini göster
@@ -124,9 +137,17 @@ public class dusmankod : MonoBehaviour
     {
         if (collision.collider.CompareTag("laser"))
         {
+            animator.SetBool("die", true);
             Instantiate(enerji, transform.position, Quaternion.identity);
-            Destroy(this.gameObject);
+            
             
         }
+    }
+    public void YokOl()
+    {
+        agent.isStopped = true;
+        Instantiate(robokan, transform.position, Quaternion.identity);
+        Destroy(this.gameObject);
+        
     }
 }

@@ -1021,6 +1021,18 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3397117969177774638, guid: ede4953b6ea965c458689123cdc04a9b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3397117969177774638, guid: ede4953b6ea965c458689123cdc04a9b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3397117969177774638, guid: ede4953b6ea965c458689123cdc04a9b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3397117969177774638, guid: ede4953b6ea965c458689123cdc04a9b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.06
       objectReference: {fileID: 0}
@@ -1059,6 +1071,10 @@ PrefabInstance:
     - target: {fileID: 3397117969177774638, guid: ede4953b6ea965c458689123cdc04a9b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3397117969177774638, guid: ede4953b6ea965c458689123cdc04a9b, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6649244967055015129, guid: ede4953b6ea965c458689123cdc04a9b, type: 3}
       propertyPath: pil
@@ -1318,6 +1334,14 @@ PrefabInstance:
     - target: {fileID: 4989213177451907379, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
       propertyPath: m_Name
       value: DusmanRobot1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5344866910579696455, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: atesrange
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 5344866910579696455, guid: e98859d450fe55f46b911db5ee58e54a, type: 3}
+      propertyPath: dedectrange
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
