@@ -9,7 +9,7 @@ public class movement : MonoBehaviour
     Rigidbody2D rigid;
     Animator animator;
     public float speed = 5;
-    float enerji = 3;
+    public float enerji = 3;
     
     
     void Start()
