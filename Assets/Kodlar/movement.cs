@@ -23,6 +23,11 @@ public class movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Tekrar();
+        }
+        
         if (!animator.GetBool("die"))
         {
             pil.GetComponent<Animator>().SetInteger("sarj", enerji);
