@@ -41,15 +41,16 @@ public class dusmankod : MonoBehaviour
             if (enemydedected && atesdedected == false)
             {
                 Hareket();
-                agent.isStopped = false;
+                //agent.isStopped = false;
             }
             else if (atesdedected && sýkabilir)
             {
                 AtesEt();
-                agent.isStopped = true;
+                //agent.isStopped = true;
 
             }
-            else { agent.isStopped = true; }
+            else { //agent.isStopped = true;
+                   }
         }
         
     }
