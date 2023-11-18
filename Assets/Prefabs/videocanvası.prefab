@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6521820920078424612}
   - component: {fileID: 4280798856027270028}
   - component: {fileID: 42601065629179123}
-  - component: {fileID: 7758227635847503171}
   m_Layer: 5
   m_Name: RawImage
   m_TagString: Untagged
@@ -74,18 +73,6 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
---- !u!114 &7758227635847503171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1096837349046614200}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb1ed4a7b8cbca84d942a343a029b8d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8888077145041546104
 GameObject:
   m_ObjectHideFlags: 0
@@ -98,7 +85,6 @@ GameObject:
   - component: {fileID: 8746487298922457609}
   - component: {fileID: 7592843245456359046}
   - component: {fileID: 4720661585808268890}
-  - component: {fileID: 2059872851887939317}
   m_Layer: 5
   m_Name: "videocanvas\u0131"
   m_TagString: Untagged
@@ -120,7 +106,7 @@ RectTransform:
   m_Children:
   - {fileID: 6521820920078424612}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -190,15 +176,3 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &2059872851887939317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8888077145041546104}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb1ed4a7b8cbca84d942a343a029b8d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
