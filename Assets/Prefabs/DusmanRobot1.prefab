@@ -221,6 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dedectrange: 6
+  robokan: {fileID: 3347642939375523041, guid: 8bb577180fe3fe844a7726fd6ad6276f, type: 3}
   enerji: {fileID: 5156907270472945607, guid: 0b89c38a866716f4582dbfb254ae65a6, type: 3}
   laserbeam: {fileID: 5606843067573246944, guid: 87ffa1c1e8bd85d41ba54d872ece6e5b, type: 3}
   attackpoint: {fileID: 8886960577118394126}
