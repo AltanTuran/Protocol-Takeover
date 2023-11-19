@@ -6,6 +6,7 @@ using UnityEngine;
 public class laserbeam : MonoBehaviour
 {
     Rigidbody2D Rigidbody2D;
+    public bool god = false;
     void Start()
     {
         Rigidbody2D = GetComponent<Rigidbody2D>();  
@@ -14,10 +15,18 @@ public class laserbeam : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        god = GameObject.Find("karakter").GetComponent<movement>().godmode;
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(this.gameObject);
+        if(god == false)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+
+        }
+        
     }
 }

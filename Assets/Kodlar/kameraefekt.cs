@@ -18,6 +18,8 @@ public class kameraefekt : MonoBehaviour
         karakter = GameObject.Find("karakter");
         bakmanok = GameObject.Find("bakmanok");
         cam.Follow = karakter.transform;
+        cam.m_Lens.OrthographicSize = 5;
+
     }
 
     // Update is called once per frame
@@ -25,13 +27,14 @@ public class kameraefekt : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            cam.Follow = bakmanok.transform;    
+            cam.m_Lens.OrthographicSize = 10;    
         }
         else
         {
-            cam.Follow = karakter.transform;
+            cam.m_Lens.OrthographicSize = 5;
+
         }
-        
+
         if (mov.GetComponent<Animator>().GetBool("movement"))
         {
             Vector3 rot = new Vector3(0, 0, zval);

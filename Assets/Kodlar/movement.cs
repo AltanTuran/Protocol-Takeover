@@ -12,12 +12,13 @@ public class movement : MonoBehaviour
     public float speed = 5;
     public int enerji = 3;
     public Image pil;
-    
+    public bool godmode = false;
+    GameObject[] enemy;
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        
+        enemy = GameObject.FindGameObjectsWithTag("enemy");
     }
 
     // Update is called once per frame
@@ -37,7 +38,15 @@ public class movement : MonoBehaviour
             }
             Debug.Log(rigid.velocity);
             Hareket();
-            Attack();
+            if (godmode == false)
+            {
+                Attack();
+            }
+            if (godmode)
+            {
+                God();
+               
+            }
             RotateTowardsMouse();
             if (rigid.velocity != Vector2.zero)
             {
@@ -71,6 +80,16 @@ public class movement : MonoBehaviour
         }
         else { animator.SetBool("attack", false); }
     }
+    void God()
+    {
+        if (Input.GetMouseButton(0))
+        {
+            animator.SetBool("attack", true);
+            GameObject bullet = Instantiate(laserbeam, attackpoint.position, attackpoint.rotation);
+            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+            rb.AddForce(attackpoint.up * 40, ForceMode2D.Impulse);
+        }
+    }
     void RotateTowardsMouse()
     {
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -89,8 +108,10 @@ public class movement : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("laser"))
+        if (collision.collider.CompareTag("laser") && godmode == false)
         {
+            
+            
             rigid.velocity = Vector3.zero;
             rigid.freezeRotation = true;
             animator.SetBool("die", true);
@@ -99,6 +120,12 @@ public class movement : MonoBehaviour
         if (collision.collider.CompareTag("enerji"))
         {
             enerji += 1;
+            Destroy(collision.gameObject);
+        }
+        if (collision.collider.CompareTag("kutu"))
+        {
+            godmode = true;
+            pil.GetComponent<Animator>().SetBool("god", true);
             Destroy(collision.gameObject);
         }
     }

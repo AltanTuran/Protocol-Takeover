@@ -6,6 +6,8 @@ TagManager:
   tags:
   - laser
   - enerji
+  - kutu
+  - enemy
   layers:
   - Default
   - TransparentFX
