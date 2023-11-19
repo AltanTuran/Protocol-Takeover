@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MAINMENU.unity
+    guid: 4c846e4a578daba41b6d8473377a0da3
+  - enabled: 1
+    path: Assets/Scenes/ARASAHNE.unity
+    guid: aad83ec02f0add0478370f30dcf3a3e5
+  - enabled: 1
     path: "Assets/Scenes/Arda Ba\u015Flang\u0131\xE7.unity"
     guid: 070bfcee956e09b42bffef8835528f7d
   - enabled: 1
