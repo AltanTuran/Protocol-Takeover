@@ -14,6 +14,10 @@ public class movement : MonoBehaviour
     public Image pil;
     public bool godmode = false;
     GameObject[] enemy;
+    public AudioSource shot;
+    public AudioSource die;
+    public AudioSource energy;
+    public AudioSource levelup;
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
@@ -72,6 +76,7 @@ public class movement : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && enerji >= 1)
         {
+            shot.Play();
             animator.SetBool("attack", true);
             enerji -= 1;
             GameObject bullet = Instantiate(laserbeam, attackpoint.position, attackpoint.rotation);
@@ -84,6 +89,7 @@ public class movement : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
+            shot.Play();
             animator.SetBool("attack", true);
             GameObject bullet = Instantiate(laserbeam, attackpoint.position, attackpoint.rotation);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
@@ -111,7 +117,7 @@ public class movement : MonoBehaviour
         if (collision.collider.CompareTag("laser") && godmode == false)
         {
             
-            
+            die.Play();
             rigid.velocity = Vector3.zero;
             rigid.freezeRotation = true;
             animator.SetBool("die", true);
@@ -119,11 +125,13 @@ public class movement : MonoBehaviour
         }
         if (collision.collider.CompareTag("enerji"))
         {
+            energy.Play();
             enerji += 1;
             Destroy(collision.gameObject);
         }
         if (collision.collider.CompareTag("kutu"))
         {
+            levelup.Play();
             godmode = true;
             pil.GetComponent<Animator>().SetBool("god", true);
             Destroy(collision.gameObject);

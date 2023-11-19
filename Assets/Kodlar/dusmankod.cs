@@ -18,6 +18,8 @@ public class dusmankod : MonoBehaviour
     NavMeshAgent agent;
     public float atesrange;
     bool sýkabilir = true;
+    public AudioSource shot;
+    public AudioSource die;
     void Start()
     {
         rigidbody2 = GetComponent<Rigidbody2D>();
@@ -72,6 +74,7 @@ public class dusmankod : MonoBehaviour
     }
     void AtesEt()
     {
+        shot.Play();    
         animator.SetBool("attack", true);
         sýkabilir = false;
         StartCoroutine("sýkma");
@@ -140,6 +143,7 @@ public class dusmankod : MonoBehaviour
         {
             animator.SetBool("die", true);
             Instantiate(enerji, transform.position, Quaternion.identity);
+            die.Play();
             
             
         }

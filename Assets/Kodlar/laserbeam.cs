@@ -7,6 +7,13 @@ public class laserbeam : MonoBehaviour
 {
     Rigidbody2D Rigidbody2D;
     public bool god = false;
+    AudioSource sesKaynagi;
+
+    private void Awake()
+    {
+       
+
+    }
     void Start()
     {
         Rigidbody2D = GetComponent<Rigidbody2D>();  
